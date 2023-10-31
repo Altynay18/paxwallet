@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="src/investors.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pax wallet</title>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="/src/assets/images/logo.png"
+		/>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbar-container">
+				<div class="logo-wrapper">
+			<div class="logo">
+				<a href="/index.html">
+<svg width="80" height="47" viewBox="0 0 80 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.0417 24.4584C37.7609 24.4584 37.5347 24.3726 37.3631 24.201C37.2071 24.045 37.1292 23.8266 37.1292 23.5459V12.5015C37.1447 11.2847 37.4333 10.1928 37.9949 9.22561C38.5721 8.24284 39.3443 7.47067 40.3114 6.90909C41.2942 6.34752 42.3939 6.06673 43.6107 6.06673C44.8587 6.06673 45.974 6.35532 46.9568 6.93249C47.9395 7.49407 48.7117 8.26624 49.2733 9.249C49.8505 10.2318 50.139 11.3471 50.139 12.5951C50.139 13.8274 49.8583 14.935 49.2967 15.9177C48.7507 16.9005 48.0019 17.6805 47.0504 18.2577C46.0988 18.8192 45.0224 19.1 43.8213 19.1C42.7761 19.1 41.8246 18.8816 40.9666 18.4448C40.1242 17.9925 39.4457 17.3997 38.9309 16.6665V23.5459C38.9309 23.8266 38.8451 24.045 38.6735 24.201C38.5175 24.3726 38.3069 24.4584 38.0417 24.4584ZM43.6107 17.4621C44.5155 17.4621 45.3266 17.2515 46.0442 16.8303C46.7618 16.4091 47.3234 15.832 47.7289 15.0988C48.1501 14.35 48.3607 13.5154 48.3607 12.5951C48.3607 11.6591 48.1501 10.8245 47.7289 10.0914C47.3234 9.3582 46.7618 8.78102 46.0442 8.35984C45.3266 7.92306 44.5155 7.70466 43.6107 7.70466C42.7215 7.70466 41.9182 7.92306 41.2006 8.35984C40.483 8.78102 39.9214 9.3582 39.5159 10.0914C39.1103 10.8245 38.9075 11.6591 38.9075 12.5951C38.9075 13.5154 39.1103 14.35 39.5159 15.0988C39.9214 15.832 40.483 16.4091 41.2006 16.8303C41.9182 17.2515 42.7215 17.4621 43.6107 17.4621Z" fill="#312E2E"/>
+<path d="M59.5462 19.1C58.3451 19.1 57.2687 18.8192 56.3171 18.2577C55.3656 17.6805 54.609 16.9005 54.0474 15.9177C53.5014 14.935 53.2285 13.8274 53.2285 12.5951C53.2285 11.3471 53.5093 10.2318 54.0708 9.249C54.648 8.26624 55.428 7.49407 56.4107 6.93249C57.3935 6.35532 58.5011 6.06673 59.7334 6.06673C60.9658 6.06673 62.0655 6.35532 63.0327 6.93249C64.0154 7.49407 64.7876 8.26624 65.3492 9.249C65.9264 10.2318 66.2228 11.3471 66.2384 12.5951L65.513 13.1567C65.513 14.2798 65.2478 15.2938 64.7174 16.1985C64.2026 17.0877 63.4929 17.7975 62.5881 18.3279C61.6989 18.8426 60.685 19.1 59.5462 19.1ZM59.7334 17.4621C60.6382 17.4621 61.4415 17.2515 62.1435 16.8303C62.8611 16.4091 63.4227 15.832 63.8283 15.0988C64.2494 14.35 64.46 13.5154 64.46 12.5951C64.46 11.6591 64.2494 10.8245 63.8283 10.0914C63.4227 9.3582 62.8611 8.78102 62.1435 8.35984C61.4415 7.92306 60.6382 7.70466 59.7334 7.70466C58.8442 7.70466 58.0409 7.92306 57.3233 8.35984C56.6057 8.78102 56.0364 9.3582 55.6152 10.0914C55.194 10.8245 54.9834 11.6591 54.9834 12.5951C54.9834 13.5154 55.194 14.35 55.6152 15.0988C56.0364 15.832 56.6057 16.4091 57.3233 16.8303C58.0409 17.2515 58.8442 17.4621 59.7334 17.4621ZM65.3258 18.983C65.0606 18.983 64.8422 18.905 64.6706 18.749C64.499 18.5774 64.4132 18.3591 64.4132 18.0939V14.0926L64.8578 12.2441L66.2384 12.5951V18.0939C66.2384 18.3591 66.1526 18.5774 65.981 18.749C65.8094 18.905 65.591 18.983 65.3258 18.983Z" fill="#312E2E"/>
+<path d="M78.915 18.983C78.7278 18.983 78.5718 18.9518 78.447 18.8894C78.3378 18.827 78.2208 18.7178 78.096 18.5618L74.048 13.414L73.346 12.8057L69.2746 7.63447C69.103 7.43167 69.0172 7.22108 69.0172 7.00269C69.0328 6.7843 69.1108 6.59711 69.2512 6.44111C69.3916 6.26952 69.5944 6.18372 69.8596 6.18372C70.1247 6.18372 70.3509 6.27732 70.5381 6.46451L74.4692 11.4953L75.1009 12.0101L79.4532 17.5791C79.656 17.8287 79.7418 18.0627 79.7106 18.2811C79.6794 18.4994 79.578 18.671 79.4064 18.7958C79.2504 18.9206 79.0866 18.983 78.915 18.983ZM69.649 18.983C69.3994 18.983 69.1966 18.905 69.0406 18.749C68.9002 18.593 68.8222 18.4059 68.8066 18.1875C68.8066 17.9691 68.8924 17.7585 69.064 17.5557L73.3694 12.1739L74.3756 13.5076L70.2807 18.7022C70.1403 18.8894 69.9297 18.983 69.649 18.983ZM75.1243 12.8993L73.9778 11.7293L78.0258 6.60491C78.135 6.44891 78.252 6.33972 78.3768 6.27732C78.5172 6.21492 78.6576 6.18372 78.798 6.18372C79.0632 6.18372 79.266 6.26952 79.4064 6.44111C79.5468 6.59711 79.6092 6.7921 79.5936 7.02609C79.5936 7.24448 79.5156 7.45507 79.3596 7.65787L75.1243 12.8993Z" fill="#312E2E"/>
+<path d="M40.4881 38.9094C40.3875 38.9094 40.2969 38.8843 40.2164 38.834C40.146 38.7836 40.0956 38.7132 40.0654 38.6226L37.6199 31.301C37.5796 31.0795 37.5897 30.9185 37.65 30.8179C37.7104 30.7072 37.8161 30.6518 37.9671 30.6518C38.0476 30.6518 38.1281 30.677 38.2086 30.7273C38.2891 30.7676 38.3495 30.833 38.3898 30.9235L40.624 37.6564H40.4277L42.4808 31.0141C42.511 30.9034 42.5664 30.8179 42.6469 30.7575C42.7274 30.687 42.823 30.6518 42.9337 30.6518C43.0444 30.6518 43.135 30.687 43.2054 30.7575C43.286 30.8179 43.3463 30.9034 43.3866 31.0141L45.5001 37.6564H45.2283L47.4626 30.9235C47.5431 30.7424 47.684 30.6518 47.8853 30.6518C48.0664 30.6518 48.1872 30.7223 48.2476 30.8632C48.318 31.0041 48.318 31.15 48.2476 31.301L45.8171 38.6226C45.7869 38.7132 45.7315 38.7836 45.651 38.834C45.5806 38.8843 45.49 38.9094 45.3793 38.9094C45.2787 38.9094 45.1881 38.8843 45.1076 38.834C45.0271 38.7836 44.9767 38.7132 44.9566 38.6226L42.7979 31.9199H42.9941L40.9108 38.6226C40.8706 38.7232 40.8102 38.7987 40.7297 38.849C40.6592 38.8893 40.5787 38.9094 40.4881 38.9094Z" fill="#312E2E"/>
+<path d="M53.2066 39C52.4014 39 51.6768 38.8189 51.0327 38.4565C50.3987 38.0842 49.8955 37.581 49.5231 36.9469C49.1608 36.3028 48.9796 35.5832 48.9796 34.7882C48.9796 33.983 49.1608 33.2635 49.5231 32.6294C49.8955 31.9853 50.3987 31.4821 51.0327 31.1198C51.6768 30.7474 52.4014 30.5612 53.2066 30.5612C54.0117 30.5612 54.7313 30.7474 55.3653 31.1198C55.9994 31.4821 56.4975 31.9853 56.8598 32.6294C57.2322 33.2635 57.4184 33.983 57.4184 34.7882L57.041 35.392C57.041 36.0764 56.8699 36.6903 56.5277 37.2338C56.1956 37.7772 55.7427 38.21 55.1691 38.532C54.5954 38.844 53.9412 39 53.2066 39ZM53.2066 38.1546C53.8406 38.1546 54.4042 38.0087 54.8973 37.7168C55.4005 37.4149 55.793 37.0123 56.0748 36.5091C56.3667 35.9959 56.5126 35.4222 56.5126 34.7882C56.5126 34.1441 56.3667 33.5704 56.0748 33.0672C55.793 32.5539 55.4005 32.1514 54.8973 31.8595C54.4042 31.5576 53.8406 31.4066 53.2066 31.4066C52.5826 31.4066 52.019 31.5576 51.5158 31.8595C51.0126 32.1514 50.615 32.5539 50.3232 33.0672C50.0313 33.5704 49.8854 34.1441 49.8854 34.7882C49.8854 35.4222 50.0313 35.9959 50.3232 36.5091C50.615 37.0123 51.0126 37.4149 51.5158 37.7168C52.019 38.0087 52.5826 38.1546 53.2066 38.1546ZM56.9655 38.9094C56.8347 38.9094 56.724 38.8692 56.6334 38.7887C56.5529 38.6981 56.5126 38.5874 56.5126 38.4565V35.6939L56.7995 34.7882H57.4184V38.4565C57.4184 38.5874 57.3781 38.6981 57.2976 38.7887C57.2171 38.8692 57.1064 38.9094 56.9655 38.9094Z" fill="#312E2E"/>
+<path d="M61.1126 38.9094C60.7302 38.9094 60.388 38.8038 60.0861 38.5924C59.7942 38.3811 59.5627 38.0892 59.3916 37.7168C59.2306 37.3445 59.1501 36.9117 59.1501 36.4186V27.5722C59.1501 27.4313 59.1904 27.3206 59.2709 27.2401C59.3614 27.1596 59.4721 27.1193 59.603 27.1193C59.7439 27.1193 59.8546 27.1596 59.9351 27.2401C60.0156 27.3206 60.0559 27.4313 60.0559 27.5722V36.4186C60.0559 36.8815 60.1515 37.2639 60.3427 37.5659C60.544 37.8577 60.8006 38.0037 61.1126 38.0037H61.49C61.6007 38.0037 61.6913 38.0439 61.7617 38.1244C61.8322 38.2049 61.8674 38.3156 61.8674 38.4565C61.8674 38.5874 61.8272 38.6981 61.7466 38.7887C61.6661 38.8692 61.5554 38.9094 61.4145 38.9094H61.1126Z" fill="#312E2E"/>
+<path d="M64.9551 38.9094C64.5726 38.9094 64.2304 38.8038 63.9285 38.5924C63.6367 38.3811 63.4052 38.0892 63.2341 37.7168C63.0731 37.3445 62.9925 36.9117 62.9925 36.4186V27.5722C62.9925 27.4313 63.0328 27.3206 63.1133 27.2401C63.2039 27.1596 63.3146 27.1193 63.4454 27.1193C63.5863 27.1193 63.697 27.1596 63.7775 27.2401C63.8581 27.3206 63.8983 27.4313 63.8983 27.5722V36.4186C63.8983 36.8815 63.9939 37.2639 64.1851 37.5659C64.3864 37.8577 64.6431 38.0037 64.9551 38.0037H65.3325C65.4432 38.0037 65.5337 38.0439 65.6042 38.1244C65.6746 38.2049 65.7099 38.3156 65.7099 38.4565C65.7099 38.5874 65.6696 38.6981 65.5891 38.7887C65.5086 38.8692 65.3979 38.9094 65.257 38.9094H64.9551Z" fill="#312E2E"/>
+<path d="M70.3332 38.9849C69.5381 38.9849 68.8286 38.8088 68.2046 38.4565C67.5907 38.0942 67.1076 37.5961 66.7554 36.962C66.4031 36.328 66.227 35.6034 66.227 34.7882C66.227 33.9629 66.3931 33.2383 66.7252 32.6143C67.0573 31.9803 67.5152 31.4821 68.099 31.1198C68.6827 30.7575 69.3519 30.5763 70.1067 30.5763C70.8515 30.5763 71.5107 30.7525 72.0843 31.1047C72.658 31.4469 73.1059 31.9249 73.4279 32.5388C73.75 33.1427 73.911 33.8421 73.911 34.6372C73.911 34.768 73.8707 34.8737 73.7902 34.9542C73.7097 35.0247 73.604 35.0599 73.4732 35.0599H66.8309V34.2749H73.7147L73.0505 34.7731C73.0706 34.1189 72.9599 33.5402 72.7184 33.037C72.4768 32.5338 72.1296 32.1413 71.6768 31.8595C71.2339 31.5677 70.7106 31.4217 70.1067 31.4217C69.5331 31.4217 69.0198 31.5677 68.5669 31.8595C68.1241 32.1413 67.7719 32.5338 67.5102 33.037C67.2586 33.5402 67.1328 34.1239 67.1328 34.7882C67.1328 35.4423 67.2687 36.021 67.5404 36.5242C67.8121 37.0274 68.1895 37.425 68.6726 37.7168C69.1557 37.9986 69.7092 38.1395 70.3332 38.1395C70.7257 38.1395 71.1182 38.0741 71.5107 37.9433C71.9133 37.8024 72.2303 37.6212 72.4618 37.3998C72.5423 37.3193 72.6379 37.279 72.7486 37.279C72.8693 37.269 72.97 37.2992 73.0505 37.3696C73.1612 37.4602 73.2166 37.5608 73.2166 37.6715C73.2266 37.7823 73.1813 37.8829 73.0807 37.9735C72.7586 38.2653 72.3359 38.5069 71.8126 38.6981C71.2993 38.8893 70.8062 38.9849 70.3332 38.9849Z" fill="#312E2E"/>
+<path d="M79.0343 38.9094C78.4807 38.8994 77.9876 38.7736 77.5548 38.532C77.1221 38.2804 76.7849 37.9382 76.5434 37.5055C76.3018 37.0627 76.1811 36.5645 76.1811 36.011V28.4931C76.1811 28.3522 76.2213 28.2415 76.3018 28.1609C76.3924 28.0704 76.5031 28.0251 76.634 28.0251C76.7749 28.0251 76.8856 28.0704 76.9661 28.1609C77.0567 28.2415 77.1019 28.3522 77.1019 28.4931V36.011C77.1019 36.5947 77.2831 37.0727 77.6454 37.4451C78.0077 37.8074 78.4757 37.9886 79.0494 37.9886H79.3815C79.5224 37.9886 79.6331 38.0339 79.7136 38.1244C79.8042 38.2049 79.8494 38.3156 79.8494 38.4565C79.8494 38.5874 79.8042 38.6981 79.7136 38.7887C79.6331 38.8692 79.5224 38.9094 79.3815 38.9094H79.0343ZM75.0036 31.7689C74.8828 31.7689 74.7822 31.7337 74.7016 31.6633C74.6312 31.5827 74.596 31.4821 74.596 31.3613C74.596 31.2406 74.6312 31.145 74.7016 31.0745C74.7822 30.994 74.8828 30.9537 75.0036 30.9537H79.0946C79.2154 30.9537 79.311 30.994 79.3815 31.0745C79.462 31.145 79.5022 31.2406 79.5022 31.3613C79.5022 31.4821 79.462 31.5827 79.3815 31.6633C79.311 31.7337 79.2154 31.7689 79.0946 31.7689H75.0036Z" fill="#312E2E"/>
+<path d="M12.8076 10.075C12.8076 7.82442 14.6321 6 16.8828 6C19.1334 6 20.9579 7.82442 20.9579 10.075V34.7742C20.9579 37.0248 19.1334 38.8492 16.8828 38.8492C14.6321 38.8492 12.8076 37.0248 12.8076 34.7742V10.075Z" fill="url(#paint0_linear_1_3480)"/>
+<path d="M6.40381 18.2252C6.40381 15.9746 8.22831 14.1502 10.479 14.1502C12.7296 14.1502 14.5541 15.9746 14.5541 18.2252V34.7745C14.5541 37.0251 12.7296 38.8495 10.479 38.8495C8.22831 38.8495 6.40381 37.0251 6.40381 34.7745V18.2252Z" fill="url(#paint1_linear_1_3480)" fill-opacity="0.85"/>
+<path d="M30.796 10.0997C30.796 12.3503 28.9715 14.1747 26.7209 14.1747C24.4703 14.1747 22.6458 12.3503 22.6458 10.0997C22.6458 7.84917 24.4703 6.02475 26.7209 6.02475C28.9715 6.02475 30.796 7.84917 30.796 10.0997Z" fill="url(#paint2_linear_1_3480)"/>
+<path d="M0 26.3746C0 24.1241 1.8245 22.2997 4.07514 22.2997C6.32578 22.2997 8.15029 24.1241 8.15029 26.3746V34.7741C8.15029 37.0246 6.32578 38.849 4.07514 38.849C1.8245 38.849 0 37.0246 0 34.7741V26.3746Z" fill="url(#paint3_linear_1_3480)" fill-opacity="0.8"/>
+<defs>
+<linearGradient id="paint0_linear_1_3480" x1="16.8828" y1="6" x2="16.5827" y2="35.6117" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EF4A2"/>
+<stop offset="1" stop-color="#0BAD73"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_3480" x1="10.479" y1="14.1502" x2="10.479" y2="38.8495" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EF1A0"/>
+<stop offset="1" stop-color="#0BAD73"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_3480" x1="26.8477" y1="6.00012" x2="26.8477" y2="17.0551" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0EF2A1"/>
+<stop offset="1" stop-color="#0BAD73"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1_3480" x1="4.07514" y1="22.2997" x2="4.07514" y2="38.849" gradientUnits="userSpaceOnUse">
+<stop offset="0.114583" stop-color="#0EEF9F"/>
+<stop offset="1" stop-color="#0BAD73"/>
+</linearGradient>
+</defs>
+</svg>
+</a>
+			</div>
+	</div>
+	<div class="links-wrapper">
+			<div class="mobile-menu-icon"  onclick="openNav()">
+					<svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line x1="0.75" y1="1.25" x2="24.25" y2="1.25" stroke="#0BAD73" stroke-width="1.5" stroke-linecap="round"/>
+							<line x1="0.75" y1="13.25" x2="24.25" y2="13.25" stroke="#0BAD73" stroke-width="1.5" stroke-linecap="round"/>
+							<line x1="0.75" y1="7.25" x2="24.25" y2="7.25" stroke="#0BAD73" stroke-width="1.5" stroke-linecap="round"/>
+							</svg>
+											</div>
+			<div class="nav-links">
+					<div><a class="nav-link" href="/index.html">About product</a></div>
+					<div><a class="nav-link" href="/index.html#how">How it works</a></div>
+					<div><a class="nav-link" href="https://t.me/+L6YwR_v0_xszN2My">Community</a></div>
+					<div><a class="nav-link" href="/investors.html">Investors</a></div>
+					<div><a class="nav-link" href="https://medium.com/@pax_wallet">Blog</a></div>
+			</div>
+			</div>
+			</div>
+			
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" id="close-btn" onclick="closeNav()"><img class="exit" src="/src/assets/images/exit.png"></a>
+		<a href="/index.html#about" onclick="closeNav()">About product</a>
+		<a href="/index.html#how" onclick="closeNav()">How it works</a>
+		<a href="https://drive.google.com/file/d/1zdxVc2T_UO6Gl7Qkh5GBsJMNyyPXOhpC/view?usp=sharing" onclick="closeNav()">Litepaper</a>
+		<a href="#community" onclick="closeNav()">Community</a>
+		<a href="/investors.html" onclick="closeNav()">Investors</a>
+		<a href="https://medium.com/@pax_wallet" onclick="closeNav()">Blog</a>
+		<a href="/waitlist.html" onclick="closeNav()"><button class="btn1 sidemenu-btn">Join our Waitlist</button></a>
+	</div>
+		<div class="container">
+			<div class="welcome" id="main">
+				<div class="welcome-text">
+					<div class="text font-large">
+						Building trust with the <br> best VCs and Angels
+					</div>
+					<div><a href="#supportus"><button class="btn1">Support us</button></a></div>
+				</div>
+				<div class="welcome-img">
+					<img src="/src/assets/images/invest-phone.png">
+				</div>
+			</div>
+			<div class="welcome-2">
+				<div class="welcome-2-img">
+					<img src="/src/assets/images/investors-welcome2.png">
+				</div>
+				<div class="welcome-2-text">
+					<div class="welcome2-header font-large-bold">
+						Why we created <br />
+						<span class="highlight">Pax Wallet</span>
+					</div>
+					<div class="font-small welcome2-sub">
+						Blockchain and cryptocurrencies introduced the world to a new
+						financial system — DeFi. However, these solutions are not perfect:
+						they are complex and scattered in different networks. We have
+						combined the best solutions in one app to make DeFi more accessible.
+					</div>
+				</div>
+			</div>
+			<div class="title font-title w-frame">
+				What we are <span class="highlight">dealing</span> with
+			</div>
+			<div class="solution">
+				<div class="num numeration">1</div>
+				<div class="solution-pre">
+					<div class="solution-title font-medium">Interface complexity</div>
+					<div class="solution-subtitle font-small">
+						<ul>
+							<li>Beginners unfriendly</li>
+							<li>Overloaded with functions</li>
+							<li>Requires to interact with multiple additional apps</li>
+						</ul>
+					</div>
+				</div>
+				<div class="arrow">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 67 33"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M19 16.8302H46M46 16.8302L38.8333 8M46 16.8302L38.8333 26"
+							stroke="#0BAD73"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<rect
+							x="0.5"
+							y="0.5"
+							width="66"
+							height="32"
+							rx="16"
+							stroke="#0BAD73"
+						/>
+					</svg>
+				</div>
+				<div class="solution-post">
+					<div class="solution-title font-medium">“One click” interactions</div>
+					<div class="solution-subtitle font-small">
+						Intuitive interface. The user does not need to dive into the
+						processes of the application function. It is enough to select any
+						asset, press the button, and start earning.
+					</div>
+				</div>
+			</div>
+			<div class="solution">
+				<div class="num numeration">2</div>
+
+				<div class="solution-pre">
+					<div class="solution-title font-medium">Manual asset <br> management</div>
+					<div class="solution-subtitle font-small">
+						<ul>
+							<li>Unstable interest rates</li>
+							<li>Time costly</li>
+							<li>Too many protocols with different rates each</li>
+						</ul>
+					</div>
+				</div>
+				<div class="arrow">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 67 33"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M19 16.8302H46M46 16.8302L38.8333 8M46 16.8302L38.8333 26"
+							stroke="#0BAD73"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<rect
+							x="0.5"
+							y="0.5"
+							width="66"
+							height="32"
+							rx="16"
+							stroke="#0BAD73"
+						/>
+					</svg>
+				</div>
+				<div class="solution-post">
+					<div class="solution-title font-medium">
+						Automated<br> agregated staking
+					</div>
+					<div class="solution-subtitle font-small">
+						Real-time smart contract algorithm collects many different
+						profitability protocols and automatically determines the most
+						profitable ones
+					</div>
+				</div>
+			</div>
+			<div class="solution">
+				<div class="num numeration">3</div>
+
+				<div class="solution-pre">
+					<div class="solution-title font-medium">
+						Unfairness and issues <br> with  governance
+					</div>
+					<div class=" solution-subtitle font-small">
+						<ul>
+							<li>
+								Community does not inlvoved in crucial decision making process
+							</li>
+							<li>
+								Governance tokens are concentrated among small and privileged
+								members group
+							</li>
+							<li>
+								Therefore, other holders do not have incentive to hold
+								governance token
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="arrow">
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 67 33"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M19 16.8302H46M46 16.8302L38.8333 8M46 16.8302L38.8333 26"
+							stroke="#0BAD73"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<rect
+							x="0.5"
+							y="0.5"
+							width="66"
+							height="32"
+							rx="16"
+							stroke="#0BAD73"
+						/>
+					</svg>
+				</div>
+				<div class="solution-post">
+					<div class="solution-title font-medium">
+						Decentralized <br> autonomous  organization
+					</div>
+					<div class=" solution-subtitle font-small">
+						Through the distribution of the PWT token, holders will be able
+						to participate in making key decisions on the development of the
+						platform and put forward their proposals for a general vote.
+					</div>
+				</div>
+			</div>
+</div>
+		<div class="promo" id="supportus">
+			<div class="modal-container" id="modal">
+        <div class="modal" >
+            <div class="modal-img">
+                <img src="/src/assets/images/mail.png">
+            </div>
+            <div class="modal-msg">
+                <div class="msg-title">Thank you!</div>
+                <div class="msg-text">Your message has been submitted.<br> We will contact you shortly</div>
+                <div><button class="modal-close" id="modal-btn" onclick="closeModal()">Great</button></div>
+            </div>
+        </div>
+    </div>
+			<div class="form-container">
+				<form  method="post" onsubmit="sendEmail(); reset(); return false;">
+					<div class="field ">
+						<label class="font-form">Your email</label><br />
+						<input id="invest-email" class="font-form" type="email" placeholder="John@gmail.com" />
+					</div>
+					<div class="field">
+						<label class="font-form">Your name or company name </label><br />
+						<input id="invest-name" class="font-form" type="text" placeholder="John/ Sequoia Capital" />
+					</div>
+					<button type="submit" class="btn2">Submit</button>
+				</form>
+			</div>
+			<div class="promo-text">
+				<div class="arrow-container">
+					<svg class="arrowsvg"
+						width="184"
+						height="73"
+						viewBox="0 0 184 73"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M182.084 71.4263C160.692 45.1329 94.8023 -0.795799 2.37844 25.8373M2.37844 25.8373L24.5606 1.6957M2.37844 25.8373L33.7535 39.1947"
+							stroke="url(#paint0_linear_75_511)"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<defs>
+							<linearGradient
+								id="paint0_linear_75_511"
+								x1="-1.18187"
+								y1="19.1953"
+								x2="156.383"
+								y2="74.8959"
+								gradientUnits="userSpaceOnUse"
+							>
+								<stop stop-color="#0BAD73" />
+								<stop offset="1" stop-color="#0BAD73" stop-opacity="0" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="promo-header font-large-bold">Interested to <br> support us?</div>
+				<div class=" promo-subheader font-small ">
+					feel free to submit your email here and we <br />
+					will contact you instantly
+				</div>
+			</div>
+		</div>
+		<div class="footer-section">
+			<div class="footer-container">
+					<div class="footer-logo">
+							<div class="logo-container"> <a href="#main">
+								<img src="/src/assets/images/logosvg.svg">
+							</a>
+							</div>
+					</div>
+					<div class="footer-menu font-small">
+							<div class="menu-item"><a href="/index.html#about">About product</a></div>
+							<div  class="menu-item"><a href="/index.html#how">How it works</a></div>
+							<div  class="menu-item"><a href="/investors.html">Investors</a></div>
+							<div  class="menu-item"> <a href="https://drive.google.com/file/d/1zdxVc2T_UO6Gl7Qkh5GBsJMNyyPXOhpC/view?usp=sharing">Litepaper</a></div>
+							<div class="menu-item"><a href="https://medium.com/@pax_wallet">Blog</a></div>
+					</div>
+					<div class="footer-socials ">
+							<div >Be part of our community</div>
+							<div class="logos">
+									<div class="sm-logos-container"><a href="https://t.me/+35R1AKZZC2c4NWUy ">
+											<!-- <img class="social-logo" src="/src/assets/images/telegram.svg"> -->
+											<svg  class="smsvg" width="100%" height="100%" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="26.2857" cy="26.2857" r="26.2857" fill="url(#paint0_linear_514_2114)"/>
+												<g clip-path="url(#clip0_514_2114)">
+												<path d="M35.1328 17.0406L14.7559 24.939C13.9359 25.3068 13.6586 26.0434 14.5577 26.4432L19.7853 28.1131L32.4249 20.2612C33.115 19.7682 33.8215 19.8997 33.2135 20.4419L22.3579 30.3218L22.0169 34.503C22.3327 35.1485 22.911 35.1516 23.2799 34.8307L26.2833 31.9741L31.4271 35.8458C32.6218 36.5568 33.2719 36.098 33.5289 34.7949L36.9028 18.7367C37.2531 17.1328 36.6557 16.4261 35.1328 17.0406Z" fill="#DDF4ED"/>
+												</g>
+												<defs>
+												<linearGradient id="paint0_linear_514_2114" x1="0" y1="52.5714" x2="52.5714" y2="0" gradientUnits="userSpaceOnUse">
+												<stop offset="0.151166" stop-color="#0CB578"/>
+												<stop offset="0.853147" stop-color="#0EE196"/>
+												</linearGradient>
+												<clipPath id="clip0_514_2114">
+												<rect width="23" height="23" fill="white" transform="translate(14 15)"/>
+												</clipPath>
+												</defs>
+												</svg>
+									</a></div>
+									<div  class="sm-logos-container"><a href="https://www.linkedin.com/company/paxwallet/">
+										
+									<!-- <img  class="social-logo" src="/src/assets/images/linkedin.svg"></a> -->
+									<svg  class="smsvg" width="100%" height="100%" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="26.2857" cy="26.2857" r="26.2857" fill="url(#paint0_linear_514_2115)"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8216 23.381H27.3809V25.1539C27.8936 24.1343 29.2084 23.2181 31.1835 23.2181C34.9699 23.2181 35.8688 25.2479 35.8688 28.9719V35.8691H32.0355V29.8201C32.0355 27.6993 31.5228 26.5033 30.2175 26.5033C28.4072 26.5033 27.6549 27.7922 27.6549 29.8191V35.8691H23.8216V23.381ZM17.2484 35.7061H21.0817V23.2181H17.2484V35.7061ZM21.6309 19.1461C21.631 19.4674 21.5673 19.7856 21.4434 20.082C21.3195 20.3785 21.1379 20.6474 20.9092 20.8731C20.4458 21.3337 19.8185 21.5915 19.1651 21.5899C18.5128 21.5895 17.8869 21.3323 17.4228 20.874C17.1949 20.6476 17.014 20.3784 16.8903 20.0819C16.7666 19.7854 16.7027 19.4674 16.7021 19.1461C16.7021 18.4974 16.9609 17.8764 17.4238 17.4183C17.8875 16.9594 18.5136 16.7021 19.166 16.7024C19.8196 16.7024 20.4464 16.9602 20.9092 17.4183C21.3711 17.8764 21.6309 18.4974 21.6309 19.1461Z" fill="#DDF4ED"/>
+										<defs>
+										<linearGradient id="paint0_linear_514_2115" x1="0" y1="52.5714" x2="52.5714" y2="0" gradientUnits="userSpaceOnUse">
+										<stop offset="0.151166" stop-color="#0CB578"/>
+										<stop offset="0.853147" stop-color="#0EE196"/>
+										</linearGradient>
+										</defs>
+										</svg>
+									</div> 
+							</div>
+					</div>
+			</div>
+			
+	</div>
+				<script>
+						function openNav() {
+							document.getElementById("mySidenav").style.width = "100%";
+						}
+						
+						function closeNav() {
+							document.getElementById("mySidenav").style.width = "0";
+
+						}
+
+						function openModal(){
+                // event.preventDefault()
+                let mm = document.getElementById("modal");
+                mm.style.visibility='visible';
+            }
+
+            function closeModal(){
+                let btn = document.getElementById("modal");
+                btn.style.visibility='hidden';
+                        }
+						</script>
+
+<script type="text/javascript">
+	async function sendEmail() {
+			 const ans = await Email.send({
+					SecureToken: "17b73a57-e918-4831-92e9-6b9b14afdc88",
+					To: "info@paxaro.com",
+					From: "info@paxaro.com",
+					Subject: "Message from PaxWallet website (Investors)",
+					Body: "Email: " + document.getElementById('invest-email').value
+								 + "<br> Name/Company name: " + document.getElementById('invest-name').value
+			});
+			if(ans==='OK'){
+				openModal();
+			}
+	}
+</script>
+	</body>
+</html>

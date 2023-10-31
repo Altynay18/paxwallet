@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Interfaces';
+    src: url('fonts/FontsFree-Net-TTInterfaces-Regular-1.eot');
+    src: url('fonts/FontsFree-Net-TTInterfaces-Regular-1.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FontsFree-Net-TTInterfaces-Regular-1.woff2') format('woff2'),
+         url('fonts/FontsFree-Net-TTInterfaces-Regular-1.woff') format('woff'),
+         url('fonts/FontsFree-Net-TTInterfaces-Regular-1.ttf')  format('truetype'),
+         url('fonts/FontsFree-Net-TTInterfaces-Regular-1.svg#TT Interfaces') format('svg');
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="src/waitlist.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Join our waitlist
+        </title>
+        <link rel="shortcut icon" type="image/png" href="/src/assets/images/logo.png"/>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="/index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="30" viewBox="0 0 42 30" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9794 29.4034L0.615074 16.4403C-0.205025 15.6449 -0.205025 14.3551 0.615074 13.5597L13.9794 0.596607C14.7995 -0.19887 16.1291 -0.19887 16.9492 0.596607C17.7693 1.39208 17.7693 2.68181 16.9492 3.47729L7.16985 12.9631L39.9 12.9631C41.0598 12.9631 42 13.875 42 15C42 16.125 41.0598 17.0369 39.9 17.0369L7.16985 17.0369L16.9492 26.5227C17.7693 27.3182 17.7693 28.6079 16.9492 29.4034C16.1291 30.1989 14.7995 30.1989 13.9794 29.4034Z" fill="#E1E1E1"/>
+                </svg> 
+            </a>          
+        </div>
+        <div class="container">
+    <div class="modal-container" id="modal">
+        <div class="modal" >
+            <div class="modal-img">
+                <img src="/src/assets/images/mail.png">
+            </div>
+            <div class="modal-msg">
+                <div class="msg-title">Thank you!</div>
+                <div class="msg-text">Shortly, you will receive an email <br> with further details and steps.</div>
+                <div><button class="modal-close" id="modal-btn" onclick="closeModal()">Great</button></div>
+            </div>
+        </div>
+    </div>
+       
+        <div class="form-container">
+            <form  method="post" onsubmit="sendEmail(); reset(); return false;">
+                <div class="field"> 
+                    <label class="font-small">Your name</label><br>
+                    <input id="name" type="text" placeholder="John" >
+                </div>
+                <div class="field">
+                <label class="font-small">Your email</label><br>
+                <input id="email" type="email" placeholder="john@gmail.com">
+            </div>
+            <label class="font-small">Have you ever used DeFi services?</label><br>
+            <div class=" field field-btns">
+                <input
+                 id="option1" onclick="validate(); getUserOption(`No, I haven't`) " type="button"  class="btn"  value="No, I haven't" >
+                <input 
+                id="option2" onclick="validate(); getUserOption(`Yes, but sometimes`) " type="button"  class="btn"  value="Yes, but sometimes" >
+                <input 
+                 id="option3"  onclick="validate(); getUserOption(`Yes, often`)" type="button" class="btn"  value="Yes, often" >
+            </div>
+            <button id='submit-btn' disabled class="btn-disabled" type="submit" onclick="openModal()">Join Waitlist</button>
+            </form>
+        </div>
+        </div>
+        <script >
+            function validate(id){
+                if(document.getElementById('name').value !==''){
+                    document.getElementById('submit-btn').className ='btn-active';
+                    document.getElementById('option1').classList.add ='active';
+                    console.log('hello')
+                    document.getElementById('submit-btn').disabled=false;
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            var ans='';
+            function getUserOption(id){
+                        console.log(id)
+                        ans = id;
+                    }
+            function openModal(){
+                // event.preventDefault()
+                let mm = document.getElementById("modal");
+                mm.style.visibility='visible';
+            }
+
+            function closeModal(){
+                let btn = document.getElementById("modal");
+                btn.style.visibility='hidden';
+                        }
+
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "17b73a57-e918-4831-92e9-6b9b14afdc88",
+                    To: "info@paxaro.com",
+                    From: "info@paxaro.com",
+                    Subject: "Message from PaxWallet website (Waitlist)",
+                    Body: "Name: " + document.getElementById('name').value
+                        + "<br> Email: " + document.getElementById('email').value
+                        + "<br> Have you ever used DeFi services?: " + ans
+                });
+            }
+        </script>
+    </body>
+</html> 

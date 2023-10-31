@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@font-face {
+	font-family: "TT Interfaces";
+	src: url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.eot");
+	src: url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Bold.eot");
+	src: url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Bold.eot?#iefix") format("embedded-opentype");
+	src: url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.eot#iefix") format("embedded-opentype"), url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.woff2") format("woff2"),
+			url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.woff") format("woff"), url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.ttf") format("truetype"),
+			url("/src/assets/fonts/fonts/FontsFree-Net-TTInterfaces-Regular-1.svg#TT Interfaces") format("svg");
+	-webkit-font-smoothing: antialiased;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTInterfaces";
+	src: local("TTInterfaces"), url("/src/assets/fonts/semibold/TTInterfaces-SemiBold.ttf") format("truetype"), url("/src/assets/fonts/semibold/TTInterfaces-SemiBold.eot?#iefix") format("embedded-opentype"),
+			url("/src/assets/fonts/semibold/TTInterfaces-SemiBold.woff") format("woff");
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: #055b3c;
+	background-image: url("/src/assets/images/waitlist-vector.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "TT Interfaces";
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-container{
+	visibility: hidden; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+	background-color: #055b3c;
+	background-image: url("/src/assets/images/waitlist-vector.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+  /* background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.modal{
+	width: 902px;
+	height: 615px;
+	background-color: #fff;
+	padding-top: 90px;
+	border-radius: 14px;
+
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.modal-img {
+	width: 244px;
+}
+
+.modal-img > img {
+	width: 100%;
+	/* min-height: 100%; */
+	object-fit: cover;
+	object-position: top;
+}
+
+.modal-msg{
+	color: #12352B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.msg-title{
+	font-family: "TTInterfaces";
+	margin-top: 36px;
+	width: 415px;
+	font-style: normal;
+	/* font-weight: 600; */
+	font-size: 55px;
+	line-height: 135%;
+/* or 74px */
+	text-align: center;
+}
+
+.msg-text{
+	margin-top: 18px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 135%;
+	width: 290px;
+	text-align: center;
+}
+
+.modal-close{
+	margin-top: 80px;
+	width: 268.31px;
+	height: 69.21px;
+	background: linear-gradient(270deg, #0AC884 5.78%, #0BAD73 82.28%);
+	border-radius: 63px;
+	border: none;
+
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 135%;
+	/* identical to box height, or 30px */
+
+	letter-spacing: -0.01em;
+
+	color: #FFFFFF;
+
+}
+
+.modal-close:hover{
+	background: linear-gradient(270deg, #05EF9B 5.78%, #0AC180 82.28%);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 50px;
+	height: 100%;
+}
+
+.nav {
+	display: flex;
+	margin-right: auto;
+	padding: 56px 200px;
+}
+
+.form-container {
+	width: max-content;
+	height: 700px;
+	background: #f9f9f9;
+	border-radius: 14px;
+	padding: 50px;
+	/* position: absolute;
+top: 50%;
+right: 50%;
+transform: translate(50%, -50%); */
+}
+
+.field {
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.field-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+form {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 135%;
+	/* or 35px */
+
+	letter-spacing: -0.01em;
+
+	color: #1c1c1c;
+}
+
+input {
+	width: 100%;
+	border-width: 0 0 2px 0;
+	height: 40px;
+	font-size: 26px;
+	background: #f9f9f9;
+	/* border-bottom: #000; */
+}
+
+input::placeholder {
+	color: #d7d7d7;
+}
+
+.btn {
+	width: 224px;
+	height: 69px;
+	border-radius: 63px;
+	background-color: #fff;
+	border: 1px solid #0ac884;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 135%;
+	color: #0ac884;
+	margin-top: 0.7rem;
+	margin-right: 0.3rem;
+}
+
+.btn:focus {
+	background: linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%);
+	-webkit-tap-highlight-color: linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%);
+
+	color: #1c1c1c;
+}	
+
+.btn:hover {
+	background: linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%);
+	color: #1c1c1c;
+}
+
+.btn-active {
+	width: 304px;
+	height: 78px;
+	border-radius: 63px;
+	background: linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%);
+	font-size: 22px;
+	border: none;
+	margin-right: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 135%;
+	color: #fff;
+}
+
+.active{
+	background:  linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%) !important;
+	/* -webkit-tap-highlight-color:  linear-gradient(270deg, #0ac884 5.78%, #0bad73 82.28%) !important; */
+}
+
+.btn-disabled {
+	background: linear-gradient(270deg, rgba(10, 200, 132, 0.2) 5.78%, rgba(11, 173, 115, 0.2) 82.28%);
+	width: 304px;
+	height: 78px;
+	border-radius: 63px;
+	border: none;
+	margin-right: 1rem;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 135%;
+	color: #fff;
+}
+@media screen and (min-width: 1440px) and (max-width: 1720px) {
+	
+.modal{
+	width: 852px;
+	height: 675px;
+	background-color: #fff;
+	padding-top: 80px;
+	border-radius: 14px;
+
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.modal-msg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.msg-title{
+	margin-top: 30px;
+	font-size: 55px;
+}
+
+.msg-text{
+	margin-top: 18px;
+	font-size: 18px;
+}
+
+.modal-close{
+	margin-top: 75px;
+	width: 268.31px;
+	height: 69.21px;
+	font-size: 22px;
+}
+	.form-container {
+			width: max-content;
+			height: max-content;
+	}
+
+	.nav {
+			padding: 56px 100px;
+	}
+
+	input,
+	label {
+			font-size: 22px;
+	}
+	.btn {
+			width: 196px;
+			height: 60px;
+	}
+
+	.btn-active {
+			width: 274px;
+			height: 68px;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1430px) {
+	.modal{
+		width: 504px;
+		height: 380px;
+		padding-top: 42px;
+	}
+
+	.modal-img {
+		width: 156px;
+	}
+	
+	.modal-msg{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.msg-title{
+		margin-top: 16px;
+		font-size: 35px;
+	}
+	
+	.msg-text{
+		margin-top: 14px;
+		font-size: 14px;
+	}
+	
+	.modal-close{
+		margin-top: 32px;
+		width: 213px;
+	height: 46px;
+	font-size: 12px;
+	}
+
+	.form-container {
+			width: 452px;
+			height: max-content;
+			/* height: 397.99px; */
+			padding: 30px;
+	}
+
+	.nav {
+			padding: 26px 50px;
+	}
+
+	input,
+	label {
+			font-size: 18px;
+	}
+
+	.btn {
+			width: 213px;
+			height: 46px;
+			font-size: 12px;
+	}
+
+	.btn-disabled {
+			width: 213px;
+			height: 46px;
+	}
+
+	.btn-active {
+			width: 200px;
+			height: 45px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+	.modal{
+		width: 273px;
+		height: 416px;
+		padding-top: 70px;
+	}
+
+	.modal-img {
+		width: 164px;
+	}
+	
+	.modal-msg{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.msg-title{
+		margin-top: 36px;
+		font-size: 35px;
+	}
+	
+	.msg-text{
+		margin-top: 14px;
+		font-size: 14px;
+	}
+	
+	.modal-close{
+		margin-top: 32px;
+		width: 213px;
+	height: 46px;
+	font-size: 12px;
+	}
+
+	.container {
+			margin: 0;
+	}
+	.form-container {
+			width: 272px;
+			height: max-content;
+			padding: 1rem;
+	}
+
+	.form {
+			padding: 0;
+	}
+
+	.nav {
+			padding: 26px 25px;
+	}
+
+	.field {
+			width: 85%;
+	}
+
+	.field-btns{
+		width: 213px;
+	}
+
+	input,
+	label {
+			font-size: 16px;
+	}
+
+	.btn {
+			width: max-content;
+			height: 35px;
+			font-size: 10px;
+	}
+
+	.btn-disabled {
+			width: 213px;
+			height: 46px;
+	}
+
+	.btn-active {
+			width: 213px;
+			height: 46px;
+	}
+}
